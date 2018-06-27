@@ -38,6 +38,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+
 }
 #footer {
   background-color: #444;
@@ -76,7 +77,8 @@ nav h1 a {
 
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+    display: inline-block;
+    margin: auto;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -106,9 +108,10 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: #3397DB;
-  align-items: center;
+  text-align: center;
+  padding: 1%;
 }
 .filter-options h2 {
   color: white;
