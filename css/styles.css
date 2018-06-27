@@ -128,8 +128,12 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Listing ====================== */
+/* Flexbox container */
 #restaurants-list {
   background-color: #f3f3f3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   list-style: outside none none;
   margin: 0;
   text-align: center;
@@ -138,11 +142,10 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
+  width: 20%;
   margin: 1%;
-  min-height: 20vh;
   padding: 1%;
   text-align: center;
-  width: 25%;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
