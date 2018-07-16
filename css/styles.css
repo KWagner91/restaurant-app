@@ -72,7 +72,7 @@ nav h1 a {
     list-style: none;
     background-color: #eee;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -184,24 +184,29 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+/* Flexbox */
 .inside header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Flexbox */
+.inside #maincontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%;
 }
 .inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  align-self: auto;
+  padding: 0;
 }
 .inside #map {
   background-color: #ccc;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 .inside #footer {
   bottom: 0;
@@ -214,42 +219,34 @@ nav h1 a {
   font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: 0;
-  margin: 15px 0 30px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 90%;
+	width: 100%;
 }
 #restaurant-address {
-  margin: 10px 0px;
+  padding: 2%;
 }
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
   font-weight: 600;
   letter-spacing: 10px;
-  margin: 0 0 20px;
-  padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-  width: 90%;
-}
-#restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  width: 100%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  width: 95%;
+  padding: 3% 0;
 }
 #reviews-container h2 {
   color: #f58500;
   font-weight: 300;
   letter-spacing: -1px;
-  padding-bottom: 1pt;
+  width: 90%;
 }
 #reviews-list {
   margin: 0;
@@ -264,7 +261,7 @@ nav h1 a {
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 95%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -280,6 +277,14 @@ nav h1 a {
     #restaurants-list li {
   width: 100%;
 }
+	#restaurant-container {
+	  flex: 1 95%;
+}
+	.inside #map-container {
+	  flex: 1 95%;
+	  order: -10;
+}
+
 }
 
 
@@ -287,4 +292,19 @@ nav h1 a {
     #restaurants-list li {
   width: 45%;
 }
+	#restaurant-container {
+	  flex: 1 95%;
+}
+	.inside #map-container {
+	  flex: 1 95%;
+	  order: -10;
+}
+}
+
+ @media only screen and (min-width: 1201px) {
+	.inside #map-container,
+	#restaurant-container {
+	  flex: 1 45%;
+}
+
 }
