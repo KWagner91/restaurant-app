@@ -2,15 +2,9 @@
 This project is part of Udacity's Nanodegree "Front End Web Developer".
 > For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
 
-### Specification
+Udacity provided starter code for this app which is not responsive yet.
 
-You have been provided the code for a restaurant reviews website. The following tools where used to improve the provided starter code:
-- Mapbox API
-- Responsive Design using Flexbox
-- ARIA a11y standards
-- Service Worker for an offline-first approach
-
-### Download and open Project
+### Instructions
 
 1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. 
 
@@ -19,3 +13,11 @@ You have been provided the code for a restaurant reviews website. The following 
 3. With your server running, visit the site: `http://localhost:8000`.
 
 
+### Project Specification
+- Mapbox API request
+- Responsive App Design with Flexbox
+- ARIA standards for accessibility of images and navigation of the Website
+- Service Worker included for an offline-first approach
+
+
+### Enjoy!
